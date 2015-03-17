@@ -58,7 +58,7 @@ var testCases = map[string]string{
 	`前面" "後面`:                 `前面 " " 後面`,
 }
 
-func TestPangu(t *testing.T) {
+func TestSpacing(t *testing.T) {
 	for old, s := range testCases {
 		assert.Equal(t, Spacing(old), s)
 	}
